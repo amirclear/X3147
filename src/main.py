@@ -1,4 +1,4 @@
-from resource import OTP
+from resources import OTP
 import requests 
 import pyfiglet 
 from colorama import Fore,init 
