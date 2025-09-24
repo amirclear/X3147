@@ -1,4 +1,4 @@
-from api import send_otp_requests,send_otp_requests_json
+from resource import OTP
 import requests 
 import pyfiglet 
 from colorama import Fore,init 
@@ -13,7 +13,7 @@ print( Fore.WHITE+"SELECT Server SMS-Bomber:" + '\n' + Fore.RED + "--> 1" + Fore
 try:
     number = str(input(Fore.GREEN+"Enter phone number without ( -0- ): "))
 
-    apis = send_otp_requests(number)     
+    apis = OTP(number)     
 
     for _ in range(50):
         for url, payload, in apis:

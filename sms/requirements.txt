@@ -1,7 +1,0 @@
-requests
-colorama
-pyfiglet
-certifi
-chardet
-urllib3
-idna
